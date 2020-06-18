@@ -9,3 +9,6 @@ test('basic', () => {
   test('3str', () => {
     expect(lengthOfLongestSubstring('abcabccba')).toEqual(3);
     });
+    test('0str', () => {
+      expect(lengthOfLongestSubstring(" ")).toEqual(1);
+      });

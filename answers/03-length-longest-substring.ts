@@ -2,8 +2,8 @@ export const lengthOfLongestSubstring = function(s:string):number{
    let i = 0
    let max = 0
    let map = new Map()
-   
-   for(let k:number = 0; k < s.length - 1; k++){
+   console.log(s.length)
+   for(let k:number = 0; k <= s.length - 1; k++){
      let char = s[k]
      if(map.has(char)){
      // abddbaのdd前後のbのようにiが3まで進んだ際に
@@ -13,7 +13,8 @@ export const lengthOfLongestSubstring = function(s:string):number{
     }
    // 最大値がSlide Windowより大きいなら最大値更新
    if(max < k - i + 1) max = k - i + 1
-   // 
+   // -
+    console.log(map);
      map.set(char, k + 1)
    }
    return max
