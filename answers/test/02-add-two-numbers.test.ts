@@ -1,4 +1,4 @@
-import { addTwoNumbers } from '../add-two-numbers';
+import { addTwoNumbers } from '../02-add-two-numbers';
 
 interface ListNode {
   val: number,
