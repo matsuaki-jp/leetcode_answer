@@ -1,7 +1,7 @@
-import {isValid} from '../06-valid-parentheses'
+import {generateParenthesis} from '../06-valid-parentheses'
 
 test('ex1', () => {
-	expect(isValid('[]')).toEqual(true);
+	expect(generateParenthesis('[]')).toEqual(true);
   });
   test('ex2', () => {
 	expect(isValid('{[]}')).toEqual(true);
